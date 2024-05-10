@@ -4,18 +4,6 @@ from datetime import datetime
 from pytz import timezone
 from github import Github
 
-
-def upload_github_issue(repo, title, body):
-    """
-    해당 repo에 title 이름으로 issue를 생성하고, 내용을 body로 채우는 함수
-    :param repo: repo 이름
-    :param title: issue title
-    :param body: issue body
-    :return: None
-    """
-    repo.create_issue(title=title, body=body)
-
-
 if __name__ == "__main__":
     access_token = os.environ['GITHUB_TOKEN']
     repository_name = "github-actions"
