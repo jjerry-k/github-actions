@@ -15,4 +15,3 @@ if __name__ == "__main__":
         repo = g.get_user().get_repo(repository_name)
     repo.create_issue(title=today_date, body=random.random())
     print("Uploaded Random Number to Github Issue!")
-
